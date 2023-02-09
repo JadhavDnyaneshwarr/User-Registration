@@ -11,8 +11,11 @@ public class UserRegistration {
         String firstName = scanner.next();
         System.out.println("Enter Last Name");
         String lastName = scanner.next();
+        System.out.println("Enter Email");
+        String email = scanner.next();
 
         UserRegUtility.firstName(firstName);
-        UserRegUtility.firstName(lastName);
+        UserRegUtility.lastName(lastName);
+        UserRegUtility.email(email);
     }
 }
