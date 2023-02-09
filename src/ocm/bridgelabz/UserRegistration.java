@@ -9,6 +9,10 @@ public class UserRegistration {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first Name");
         String firstName = scanner.next();
+        System.out.println("Enter Last Name");
+        String lastName = scanner.next();
+
         UserRegUtility.firstName(firstName);
+        UserRegUtility.firstName(lastName);
     }
 }
