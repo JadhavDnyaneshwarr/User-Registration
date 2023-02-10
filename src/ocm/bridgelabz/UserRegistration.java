@@ -18,11 +18,14 @@ public class UserRegistration {
             String email = scanner.next();
             System.out.println("Enter Mobile Number");
             String mobileNo = scanner.next();
+            System.out.println("Enter Password - must contain 8 character");
+            String password = scanner.next();
 
             userRegUtility.firstName(firstName);
             userRegUtility.lastName(lastName);
             userRegUtility.email(email);
             userRegUtility.mobileNumber(mobileNo);
+            userRegUtility.password(password);
             break;
         }
     }
