@@ -53,7 +53,7 @@ public class UserRegUtility {
         }
     }
     static boolean password(String password){
-        String validPassword = "^[A-Z][a-z0-9]{5,}[!@#$%&*+][0-9]+$";
+        String validPassword = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&*+])[A-Za-z0-9!@#$%&*+]{8,}$";
         Pattern pattern = Pattern.compile(validPassword);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()){
