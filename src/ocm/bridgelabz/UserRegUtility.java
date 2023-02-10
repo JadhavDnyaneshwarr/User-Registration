@@ -40,4 +40,16 @@ public class UserRegUtility {
             return false;
         }
     }
+    static boolean mobileNumber(String mobileNo){
+        String validMobileNumber = "^[1-9]{2}[//s]?[1-9]{1}[0-9]{9}$";
+        Pattern pattern = Pattern.compile(validMobileNumber);
+        Matcher matcher = pattern.matcher(mobileNo);
+        if (matcher.matches()){
+            System.out.println("Mobile Number is Valid");
+            return true;
+        }else {
+            System.out.println("Mobile Number is Invalid");
+            return false;
+        }
+    }
 }
