@@ -26,6 +26,5 @@ public class UserRegistration {
         userRegUtility.email(email);
         userRegUtility.mobileNumber(mobileNo);
         userRegUtility.password(password);
-
     }
 }
