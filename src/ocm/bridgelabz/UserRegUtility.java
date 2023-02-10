@@ -29,7 +29,7 @@ public class UserRegUtility {
         }
     }
     static boolean email(String email){
-        String validEmail = ("^[a-z]{3,}[.]?([x-z]*)+@([b][l][.][c][o])+([.][i]?[n]?)$");
+        String validEmail = ("^[a-z]{3,}[.]?([a-zA-Z]*)+@([b][l][.][c][o])+([.][i]?[n]?)$");
         Pattern pattern = Pattern.compile(validEmail);
         Matcher matcher = pattern.matcher(email);
         if (matcher.matches()){
@@ -41,7 +41,7 @@ public class UserRegUtility {
         }
     }
     static boolean mobileNumber(String mobileNo){
-        String validMobileNumber = "^[1-9]{2}[ ]?[1-9]{1}[0-9]{9}$";
+        String validMobileNumber = "^[1-9]{2}[ ][1-9]{1}[0-9]{9}$";
         Pattern pattern = Pattern.compile(validMobileNumber);
         Matcher matcher = pattern.matcher(mobileNo);
         if (matcher.matches()){
@@ -53,7 +53,7 @@ public class UserRegUtility {
         }
     }
     static boolean password(String password){
-        String validPassword = "^.{8,}$";
+        String validPassword = "^[A-Z].{7,}$";
         Pattern pattern = Pattern.compile(validPassword);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()){
