@@ -26,5 +26,32 @@ public class UserRegistration {
         userRegUtility.email(email);
         userRegUtility.mobileNumber(mobileNo);
         userRegUtility.password(password);
+
+        System.out.println("----------Sample Emails-------------");
+        System.out.println("Checking all Valid Sample!!!");
+        userRegUtility.sampleEmails("abc@yahoo.com");
+        userRegUtility.sampleEmails("abc-100@yahoo.com");
+        userRegUtility.sampleEmails("abc.100@yahoo.com");
+        userRegUtility.sampleEmails("abc111@abc.com");
+        userRegUtility.sampleEmails("abc-100@abc.net");
+        userRegUtility.sampleEmails("abc.100@abc.com.au");
+        userRegUtility.sampleEmails("abc@1.com");
+        userRegUtility.sampleEmails("abc@gmail.com.com");
+        userRegUtility.sampleEmails("abc+100@gmail.com");
+        System.out.println();
+        System.out.println("Checking all InValid Sample!!!");
+        userRegUtility.sampleEmails("abc");
+        userRegUtility.sampleEmails("abc@.com.my");
+        userRegUtility.sampleEmails("abc123@gmail.a");
+        userRegUtility.sampleEmails("abc123@.com");
+        userRegUtility.sampleEmails(".abc@abc.com");
+        userRegUtility.sampleEmails("abc()*@gmail.com");
+        userRegUtility.sampleEmails("abc123@.com.com");
+        userRegUtility.sampleEmails("abc@%*.com");
+        userRegUtility.sampleEmails("abc..2002@gmail.com");
+        userRegUtility.sampleEmails("abc.@gmail.com");
+        userRegUtility.sampleEmails("abc@abc@gmail.com");
+        userRegUtility.sampleEmails("abc@gmail.com.1a");
+        userRegUtility.sampleEmails("abc@gmail.com.aa.au");
     }
 }
