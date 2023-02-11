@@ -64,4 +64,16 @@ public class UserRegUtility {
             return false;
         }
     }
+    static boolean sampleEmails(String emails){
+        String validSampleEmails = "^[a-z0-9]+[_+-.]?[a-z0-9]*[^_+-.][@]([a-z0-9])+([.][a-z]{2,})(.[a-z]{2,3})?$";
+        Pattern pattern = Pattern.compile(validSampleEmails);
+        Matcher matcher = pattern.matcher(emails);
+        if (matcher.matches()){
+            System.out.println("sample Email is Valid");
+            return true;
+        }else {
+            System.out.println("sample Email is Invalid");
+            return false;
+        }
+    }
 }
