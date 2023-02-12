@@ -1,4 +1,4 @@
-package ocm.bridgelabz;
+package com.bridgelabz;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -29,7 +29,7 @@ public class UserRegUtility {
         }
     }
     static boolean email(String email){
-        String validEmail = ("^[a-z]{3,}[.]?([a-zA-Z]*)+@([b][l][.][c][o])+([.][i]?[n]?)$");
+        String validEmail = "^[A-Za-z]{3,}[.]?([A-Za-z]*)+@([b][l][.][c][o])+([.][i]?[n]?)$";
         Pattern pattern = Pattern.compile(validEmail);
         Matcher matcher = pattern.matcher(email);
         if (matcher.matches()){
@@ -65,7 +65,7 @@ public class UserRegUtility {
         }
     }
     static boolean sampleEmails(String emails){
-        String validSampleEmails = "^[a-z0-9]+[_+-.]?[a-z0-9]*[^_+-.][@]([a-z0-9])+([.][a-z]{2,})(.[a-z]{2,3})?$";
+        String validSampleEmails = "^[a-z]{3,}[.+-]?[a-zA-z0-9]*[@][a-z0-9]*[.]?[a-z]*[.]?[a-z]*$";
         Pattern pattern = Pattern.compile(validSampleEmails);
         Matcher matcher = pattern.matcher(emails);
         if (matcher.matches()){
