@@ -1,8 +1,6 @@
-package ocm.bridgelabz;
+package com.bridgelabz;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
-
 public class UserRegistration {
     public static void main(String[] args) {
         UserRegUtility userRegUtility = new UserRegUtility();
